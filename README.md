@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # OpenCV YOLO Web Application
 
 A web application for object detection using OpenCV and YOLO (You Only Look Once) model.
@@ -48,14 +47,6 @@ python -m http.server 8000
 # Then open http://localhost:8000
 ```
 
-## Features
-
-✅ **Image Upload**: Drag & drop or click to upload images
-✅ **Camera Support**: Use your webcam for real-time detection
-✅ **YOLO Detection**: Uses your trained model for object detection
-✅ **Visual Results**: Shows bounding boxes and confidence scores
-✅ **Modern UI**: Clean, responsive web interface
-
 ## Usage
 
 1. **Upload an Image**: 
@@ -76,30 +67,8 @@ python -m http.server 8000
 - `GET /health` - Check server health
 - `POST /detect` - Upload image for detection
 
-## Troubleshooting
-
-**Model not loading?**
-- Ensure `best.pt` is in the `models/` directory
-- Check that the file isn't corrupted
-
-**CORS errors?**
-- Make sure the backend server is running on port 5000
-- Check that Flask-CORS is installed
-
-**Camera not working?**
-- Use HTTPS or localhost (camera requires secure context)
-- Grant camera permissions in your browser
-
 ## Requirements
 
 - Python 3.8+
 - Modern web browser
 - Webcam (optional, for camera features)
-
-## Model Support
-
-This application supports YOLO models in PyTorch format (`.pt` files) trained with Ultralytics YOLO.
-=======
-# Open-CV-Handsign-translator-Web
-A modern web-based application for real-time hand sign detection and translation using YOLO  object detection model and OpenCV.
->>>>>>> 80a9a18a2766dcecb7528b54fc1db1acde79344a
