@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenCV YOLO Object Detection</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="live-styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>YOLO Object Detection</h1>
+            <p>Upload images/videos or use your camera for real-time object detection</p>
+        </header>
+        
+        <div class="upload-section">
+            <div class="media-tabs">
+                <button class="tab-btn active" data-type="image">Images</button>
+                <button class="tab-btn" data-type="video">Videos</button>
+            </div>
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-content">
+                    <div class="upload-icon">+</div>
+                    <h3 id="uploadTitle">Drop your image here or click to upload</h3>
+                    <p id="uploadSubtitle">Supports JPG, PNG, GIF</p>
+                </div>
+                <input type="file" id="fileInput" accept="image/*,video/*" style="display: none;">
+            </div>
+        </div>
+
+        <div class="camera-section">
+            <button id="cameraBtn" class="btn btn-primary">Use Camera</button>
+            <button id="liveDetectionBtn" class="btn btn-secondary">Live Detection</button>
+            <video id="video" autoplay style="display: none;"></video>
+            <canvas id="canvas" style="display: none;"></canvas>
+        </div>
+
+        <div class="results-section" id="resultsSection" style="display: none;">
+            <h2>Detection Results</h2>
+            <div class="media-container">
+                <img id="resultImage" alt="Detection Result" style="display: none;">
+                <video id="resultVideo" controls style="display: none;"></video>
+            </div>
+            <div class="detection-info" id="detectionInfo">
+                <!-- Detection details will be displayed here -->
+            </div>
+        </div>
+
+        <div class="live-detection-section" id="liveDetectionSection" style="display: none;">
+            <h2>Live Object Detection</h2>
+            <div class="live-controls">
+                <button id="stopLiveBtn" class="btn btn-danger">Stop Detection</button>
+                <div class="fps-counter">FPS: <span id="fpsCounter">0</span></div>
+            </div>
+            <div class="live-video-container">
+                <video id="liveVideo" autoplay muted></video>
+                <canvas id="liveCanvas"></canvas>
+            </div>
+            <div class="live-detections" id="liveDetections">
+                <!-- Live detection info -->
+            </div>
+        </div>
+
+        <div class="loading" id="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Processing image...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

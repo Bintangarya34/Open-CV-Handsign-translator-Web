@@ -1,0 +1,15 @@
+{
+  "name": "web-opencv",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd frontend && python -m http.server 8000",
+    "backend": "cd backend && python app.py",
+    "install-deps": "cd backend && pip install -r requirements.txt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["opencv", "yolo", "object-detection", "computer-vision"],
+  "author": "",
+  "license": "ISC",
+  "description": "Web application for YOLO object detection using OpenCV"
+}
