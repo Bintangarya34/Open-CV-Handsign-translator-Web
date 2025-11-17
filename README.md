@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # OpenCV YOLO Web Application
 
 A web application for object detection using OpenCV and YOLO (You Only Look Once) model.
@@ -98,3 +99,7 @@ python -m http.server 8000
 ## Model Support
 
 This application supports YOLO models in PyTorch format (`.pt` files) trained with Ultralytics YOLO.
+=======
+# Open-CV-Handsign-translator-Web
+A modern web-based application for real-time hand sign detection and translation using YOLO  object detection model and OpenCV.
+>>>>>>> 80a9a18a2766dcecb7528b54fc1db1acde79344a
